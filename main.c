@@ -1,9 +1,6 @@
+#define  _POSIX_C_SOURCE 200809L
 #include "monty.h"
-<<<<<<< HEAD
 bus_t bus = {NULL, NULL, NULL, 0};
-=======
-#include <stdio.h>
->>>>>>> 7609328073c7f3e87c0ab97beff30e27cc9a9f1d
 /**
 * main - monty code interpreter
 * @argc: number of arguments
@@ -18,11 +15,7 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-<<<<<<< HEAD
 
-=======
-bus_t bus = {NULL, NULL, NULL, 0};
->>>>>>> 7609328073c7f3e87c0ab97beff30e27cc9a9f1d
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
@@ -51,4 +44,3 @@ bus_t bus = {NULL, NULL, NULL, 0};
 	fclose(file);
 return (0);
 }
-
